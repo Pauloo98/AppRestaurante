@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="#CACACA">
 
 
@@ -26,16 +26,16 @@
 
 
             <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="349dp"
-                android:layout_height="158dp"
+                android:id="@+id/imgCardDoRestaurante"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintHorizontal_bias="0.5302"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.064"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                app:layout_constraintVertical_bias="0.00"
+                android:background="@drawable/camarao"/>
 
             <TextView
                 android:id="@+id/nomeDoRestaurante"
@@ -44,6 +44,8 @@
                 android:layout_marginStart="8dp"
                 android:text="NOME DO RESTAURANTE"
                 android:textStyle="bold"
+                android:textColor="#1F2D3D"
+                android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -55,6 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:text="ENDEREÇO"
+                android:textColor="#8492A6"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -67,6 +70,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="4dp"
                 android:text="HORÁRIO DE FUNCIONAMENTO"
+                android:textColor="#8492A6"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 

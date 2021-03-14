@@ -25,9 +25,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Registrarse"
+        <activity android:name=".login.Registrarse"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
-        <activity android:name=".ListaDeRestaurantes"/>
+        <activity android:name=".listaDeRestaurantes.ListaDeRestaurantes"/>
+        <activity android:name=".listaDePratos.ListaDePratos"/>
+        <activity android:name=".listaDePratos.DetalheDoPrato"/>
 
 
     </application>

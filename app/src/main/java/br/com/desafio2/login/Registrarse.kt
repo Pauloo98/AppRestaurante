@@ -1,8 +1,10 @@
-package br.com.desafio2
+package br.com.desafio2.login
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import br.com.desafio2.MainActivity
+import br.com.desafio2.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class Registrarse : AppCompatActivity() {

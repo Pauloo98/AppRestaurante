@@ -3,8 +3,9 @@ package br.com.desafio2
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
+import br.com.desafio2.listaDeRestaurantes.ListaDeRestaurantes
+import br.com.desafio2.login.Registrarse
 
 class MainActivity : AppCompatActivity() {
 

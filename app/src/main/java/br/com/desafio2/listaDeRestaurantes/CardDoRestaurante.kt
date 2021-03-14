@@ -1,8 +1,9 @@
-package br.com.desafio2
+package br.com.desafio2.listaDeRestaurantes
 
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import br.com.desafio2.R
 
 class CardDoRestaurante : AppCompatActivity() {
 

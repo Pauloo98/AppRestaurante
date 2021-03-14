@@ -1,10 +1,12 @@
-package br.com.desafio2
+package br.com.desafio2.login
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 
 import androidx.appcompat.app.AppCompatActivity
+import br.com.desafio2.MainActivity
+import br.com.desafio2.R
 
 class SplashActivity : AppCompatActivity () {
 
