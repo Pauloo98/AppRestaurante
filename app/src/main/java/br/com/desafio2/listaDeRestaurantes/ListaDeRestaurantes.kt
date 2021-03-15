@@ -30,9 +30,9 @@ class ListaDeRestaurantes : AppCompatActivity() {
 
     private fun getRestaurantes() : MutableList<Restaurantes> {
         val listaDeRestaurante = mutableListOf<Restaurantes>()
-        listaDeRestaurante.add(Restaurantes("RESTAURANTE DO PAULO", "RUA JOAO", "12:00", R.drawable.camarao))
-        listaDeRestaurante.add(Restaurantes("RESTAURANTE DA JULIANA", "AVENIDA MARIA", "13:30", R.drawable.ayoama))
-        listaDeRestaurante.add(Restaurantes("RESTAURANTE DO MANOEL", "AV. DO ESTADO", "23:00", R.drawable.sisenor))
+        listaDeRestaurante.add(Restaurantes("Paris 6", "Av. Faria Lima, 1925 - Pinheiros/SP", "Fecha as 12:00", R.drawable.camarao))
+        listaDeRestaurante.add(Restaurantes("Rei da Pamonha", "Rua Silvio Roberto, 10 - Vila Olimpia/SP", "Abre as 13:30", R.drawable.ayoama))
+        listaDeRestaurante.add(Restaurantes("Madeiro", "Av. do Estado, 1554 - Armenia/SP", "Fecha as 23:00", R.drawable.sisenor))
         return listaDeRestaurante
     }
 

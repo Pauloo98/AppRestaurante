@@ -35,8 +35,10 @@ class PratoPrincipalAdapter(val context: Context, val nomeDoPrato: ArrayList<Str
         if (convertView == null) {
             convertView = layoutInflater!!.inflate(R.layout.lista_de_pratos, null)
         }
-        imagemDoPratoPrincipal = convertView!!.findViewById(R.id.imagemDoPratoPrincipal)
+        imagemDoPratoPrincipal = convertView!!.findViewById<ImageView>(R.id.imagemDoPratoPrincipal)
+//        imagemDoPratoPrincipal = imagemDoPrato[position]
         imagemDoPratoPrincipal.setBackgroundResource(imagemDoPrato[position])
+//        imagemDoPratoPrincipal.background
         nomeDoPratoPrincipal = convertView.findViewById<TextView>(R.id.nomeDoPratoPrincipal)
         nomeDoPratoPrincipal.text = nomeDoPrato[position]
         return convertView

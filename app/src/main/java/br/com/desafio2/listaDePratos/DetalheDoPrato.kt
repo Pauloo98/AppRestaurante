@@ -23,7 +23,7 @@ class DetalheDoPrato() : AppCompatActivity() {
 
 
         fabDetalheDoPrato.setOnClickListener {
-            voltarDetalheDoPrato()
+            super.onBackPressed()
         }
 
         val dados = intent.extras
@@ -31,12 +31,7 @@ class DetalheDoPrato() : AppCompatActivity() {
         nomeDoPratoClicado.text = nomeDoPrato
 
     }
-
-
-    fun voltarDetalheDoPrato(){
-        val intent = Intent(this, ListaDePratos::class.java)
-        startActivity(intent)
-    }
+    
 
 
 }

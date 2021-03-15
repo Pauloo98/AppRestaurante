@@ -46,6 +46,8 @@ class RestauranteAdapter(val restauranteList: MutableList<Restaurantes>) :
         holder.itemView.setOnClickListener {
             val intent = Intent(it.context, ListaDePratos::class.java)
             intent.putExtra("nomeDoRestaurante", nomeDoRestaurante.text.toString())
+            intent.putExtra("posicao", position)
+            intent.putExtra("imagemDoPrato", restauranteList[position].imagem.toString())
             it.context.startActivity(intent)
 
         }

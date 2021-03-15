@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity
 import br.com.desafio2.R
 import br.com.desafio2.adapter.PratoPrincipalAdapter
 import br.com.desafio2.listaDeRestaurantes.ListaDeRestaurantes
-import br.com.desafio2.model.PratoPrincipal
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ListaDePratos : AppCompatActivity() {
@@ -51,10 +50,13 @@ class ListaDePratos : AppCompatActivity() {
             startActivity(intent)
         }
 
-        imgCapaDoRestaurante.setBackgroundResource(imagensDosPratos[0])
         val dados = intent.extras
         val nomeDoRestauranteClicado = dados?.getString("nomeDoRestaurante")
+//        val imagemDoRestaurante = dados?.getInt(imagemDoRestaurante.toString())
         detalheNomeDoRestaurante.text = nomeDoRestauranteClicado
+//        imgCapaDoRestaurante.setBackgroundResource(imagensDosPratos[1])
+        val imagemDoPrato = dados?.getString("imagemDoPrato")!!.toInt()
+        imgCapaDoRestaurante.setBackgroundResource(imagemDoPrato)
 
 
 
